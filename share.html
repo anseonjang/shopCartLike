@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>공유하기 버튼</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css">
+    <style>
+        button {border:none; background-color: transparent; cursor: pointer;}
+        button i {color: #666;}
+        button i:hover {color: #000;}
+       </style>
+</head>
+<body>
+    <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
+
+    <script>
+        document.getElementById('shareButton').addEventListener('click', function() {
+            // 현재 페이지의 URL 가져오기
+            var url = window.location.href;
+            
+            // URL을 클립보드에 복사
+            navigator.clipboard.writeText(url).then(function() {
+                alert('주소가 복사되었습니다: ' + url);
+            }, function(err) {
+                console.error('주소 복사 실패: ', err);
+            });
+        });
+    </script>
+</body>
+</html>
