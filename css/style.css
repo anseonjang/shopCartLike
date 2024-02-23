@@ -220,8 +220,7 @@ body {
     }
 
     #cart button#clear-cart {
-        font-size: 1.6vw;
-       
-        top: 33px;
+        font-size: 2.3vw;       
+        top: 28px;
     }
 }
