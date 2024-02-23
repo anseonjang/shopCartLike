@@ -209,6 +209,9 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
         /* 최소, 최대 */
     }
+    #clear-items li { 
+        font-size: 2vw;
+    }
 
     #nav .logo img {
         width: 25vw;
@@ -216,7 +219,7 @@ body {
 
     #cart {
         width: 40vw;
-        padding-right: 19vw;
+        padding-right: 20vw;
         padding-left: 3vw;
     }
 
