@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 이름 - Shopping Cart / like </title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>   
     <script src="./js/shop.js"></script>
+  
 </head>
 
 <body>
@@ -39,15 +41,17 @@
 
 
             <div class="product">
+                <!-- share 버튼 -->
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <!-- 제품이미지 -->
                 <img src="./images/01.jpg" alt="SSOK3 3in1 맥세이프 무선충전기">
                 <!-- 내용 -->
                 <div class="product-details">
                     <h2>SSOK3 3in1 맥세이프 무선충전기</h2>
                     <p class="price">
-                        <span class="red">50%</span> 
+                        <span class="red">50%</span>
                         15,000
-                        <span><del>30,000</del></span> 
+                        <span><del>30,000</del></span>
                     </p>
                     <!-- 장바구니,좋아요 버튼 -->
                     <button onClick="addToCart(this)"> 장바구니 추가 </button>
@@ -56,6 +60,7 @@
             </div>
 
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/02.jpg" alt="ADATA UC300 USB">
                 <div class="product-details">
                     <h2>ADATA UC300 USB</h2>
@@ -71,6 +76,7 @@
             </div>
 
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/03.jpg" alt="한자리 목이 편한 잠잘오는 경추베개">
 
 
@@ -88,6 +94,7 @@
             </div>
 
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/04.jpg" alt="레드 비트 2KG 3KG 5KG 10KG 알비트 햇 주스용">
 
                 <div class="product-details">
@@ -104,6 +111,7 @@
             </div>
 
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/05.jpg" alt="요리용 조림 밑반찬 영양간식 생땅콩">
 
 
@@ -122,6 +130,7 @@
             </div>
 
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/06.png" alt="샤오미 레드미 워치4 정식 한국판">
 
                 <div class="product-details">
@@ -138,6 +147,7 @@
             </div>
 
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/07.jpg" alt="삼성전자 갤럭시 S23 FE 256GB ">
                 <div class="product-details">
                     <h2>삼성전자 갤럭시 S23 FE 256GB</h2>
@@ -154,6 +164,7 @@
             </div>
 
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/08.jpg" alt="삼성전자 갤럭시 워치6 40mm">
 
                 <div class="product-details">
@@ -171,6 +182,7 @@
             </div>
 
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/09.jpg" alt="폴리폴 맥세이프 충전기 3in1 무선충전기">
 
                 <div class="product-details">
@@ -188,6 +200,7 @@
             </div>
 
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/10.png" alt="K1 방문 손잡이 심플 그레이, 1세트">
 
                 <div class="product-details">
@@ -203,6 +216,7 @@
                 </div>
             </div>
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/11.png" alt="아이폰 15 128GB">
 
                 <div class="product-details">
@@ -221,6 +235,7 @@
 
 
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/12.jpg" alt="삼성전자 갤럭시 S23 FE 256GB ">
 
                 <div class="product-details">
@@ -238,6 +253,7 @@
             </div>
 
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/13.jpg" alt="라운드형 메모리폼 기능성 경추 베개">
 
                 <div class="product-details">
@@ -255,6 +271,7 @@
             </div>
 
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/14.jpg" alt="Apple 정품 아이폰 14 자급제 스타라이트">
 
                 <div class="product-details">
@@ -272,6 +289,7 @@
 
 
             <div class="product">
+                <button id="shareButton"><i class="fa-light fa-share-nodes"></i></button>
                 <img src="./images/15.jpg" alt="삼성전자 갤럭시 Z 폴드5 256GB">
 
                 <div class="product-details">
@@ -289,6 +307,23 @@
             </div>
         </div>
     </div>
+    <script>
+// 모든 공유하기 버튼 선택
+const shareButtons = document.querySelectorAll('#shareButton');
+
+// 각 버튼에 대해 이벤트 리스너 추가
+shareButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    share();
+  });
+});
+
+// Kakao 공유하기 함수
+function share() {
+  // 경고창으로 공유되었다는 알림과 함께 주어진 링크 주소 표시
+  alert("공유되었습니다: https://www.naver.com/");
+}
+    </script>
 </body>
 
 </html>
