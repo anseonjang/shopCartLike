@@ -217,6 +217,7 @@ body {
     #cart {
         width: 40vw;
         padding-right: 19vw;
+        padding-left: 3vw;
     }
 
     #cart button#clear-cart {
