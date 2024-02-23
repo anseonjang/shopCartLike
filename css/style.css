@@ -37,6 +37,7 @@ body {
     width: 150px;
     margin-top: 15px;
     margin-left: 30px;
+    margin-left: 5px;
 }
 
 #cart {
@@ -215,11 +216,11 @@ body {
 
     #cart {
         width: 40vw;
-        padding-right: 18vw;
+        padding-right: 19vw;
     }
 
     #cart button#clear-cart {
-        font-size: 2vw;
+        font-size: 1.7vw;
         width: 16vw;
         top: 33px;
     }
