@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> total </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial;
+        }
+
+        li {
+            background-color: #fff;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        span {
+            margin-left: 10px;
+            color: #888;
+        }
+
+        button {
+            padding: 8px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #368139;
+        }
+
+        .total {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul>li*2>a>p+span -->
+    <ul>
+        <li>
+            <a href="#">
+                <p>강아지 신발</p>
+                <span>1,000원</span>
+            </a>
+            <button onclick="addToCart(this)">장바구니</button>
+        </li>
+        <li>
+            <a href="#">
+                <p>총각김치</p>
+                <span>5,000원</span>
+            </a>
+            <button onclick="addToCart(this)">장바구니</button>
+        </li>
+    </ul>
+    <p class="total">총액 : </p>
+
+    <script>
+        // 장바구니에 상품추가 후 총액 업데이트
+        // 총액 저장할 변수 - totalAmount
+        let totalAmount = 0;
+        function addToCart(button) {
+            // 버튼을 기준으로 이전 형제가 a인데 이 안의 span의 가격을 추출
+            const price = parseInt(button.previousElementSibling.querySelector('span').textContent.replace(/[^0-9]/g,'')); // 숫자 이외의 모든 문자열 제거 
+            totalAmount += price;
+            document.querySelector('.total').textContent = '총액 : ' + totalAmount + '원';
+           
+            button.disabled = true; // 비활성화처리  
+            // parseInt() - 첫번째 발견되는 숫자 반환, 문자열의 첫 부분에 숫자가 아닌 문자인 경우 문자 무시 
+            // 이 함수 사용시 문자열이 숫자로 시작되는지 확인 
+            // .previusElementSibling() - 이전 형제 요소만 읽기 전용 메서드 
+
+        }
+    </script>
+</body>
+
+</html>
